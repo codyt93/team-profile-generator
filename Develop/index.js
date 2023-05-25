@@ -42,12 +42,66 @@ function menu() {
 
             }
             if (response.choice === 'addIntern') {
+                inquirer
+                .prompt([
+                    {
+                        type: 'input',
+                        message: 'interns name?',
+                        name: 'name',
+                       
+                    },
+                    {
+                        type: 'input',
+                        message: 'what is your email?',
+                        name: 'email',
+                       
+                    },
+                    {
+                        type: 'input',
+                        message: 'what is your office number?',
+                        name: 'officenumber',
+                       
+                    },
+                    {
+                        type: 'input',
+                        message: 'what is your id?',
+                        name: 'id',
+                       
+                    },
+                ])
 
             }
             if (response.choice === 'addEngineer') {
-
+                inquirer
+                .prompt([
+                    {
+                        type: 'input',
+                        message: 'engineers name?',
+                        name: 'name',
+                       
+                    },
+                    {
+                        type: 'input',
+                        message: 'what is your email?',
+                        name: 'email',
+                       
+                    },
+                    {
+                        type: 'input',
+                        message: 'what is your office number?',
+                        name: 'officenumber',
+                       
+                    },
+                    {
+                        type: 'input',
+                        message: 'what is your id?',
+                        name: 'id',
+                       
+                    },
+                ])
             }
         }
         )
 
 }
+menu()
